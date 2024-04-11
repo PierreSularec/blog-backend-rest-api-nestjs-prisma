@@ -12,5 +12,22 @@ services:
     ports:
       - '5432:5432'
 
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    restart: on-failure:5
+    ports:
+      - '3000:3000'
+    command: 
+      - /bin/sh
+      - -c
+      - |
+        npx prisma migrate dev
+        npm run start:dev
+
+
 volumes:
   postgres:
