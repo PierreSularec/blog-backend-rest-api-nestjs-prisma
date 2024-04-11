@@ -10,3 +10,16 @@ A simple backend REST API for a blog built using NestJS, Prisma, PostgreSQL and 
 3. Apply database migrations: `npx prisma migrate dev` 
 4. Start the project:  `npm run start:dev`
 5. Access the project at http://localhost:3000/api
+
+### Installation with Docker 
+#### Creating Local DB
+1. Just do `docker-compose up --build`
+2. Access the project at http://localhost:3000/api
+
+
+#### Using your own PostgreSQL DB
+
+1. Updatee your creds of your PostgreSQL DB inside the `.env` file
+2. Just do `docker-compose up --build`
+3. Access the project at http://localhost:3000/api
+
