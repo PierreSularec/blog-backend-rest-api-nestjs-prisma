@@ -19,7 +19,8 @@ A simple backend REST API for a blog built using NestJS, Prisma, PostgreSQL and 
 
 #### Using your own PostgreSQL DB
 
-1. Updatee your creds of your PostgreSQL DB inside the `.env` file
-2. Just do `docker-compose up --build`
-3. Access the project at http://localhost:3000/api
+1. Update your creds of your PostgreSQL DB inside the `.env` file
+2. Comment lines 4 to 13 and 19-20 on `docker-compose.yml``
+3. Do `docker-compose up --build`
+4. Access the project at http://localhost:3000/api
 
